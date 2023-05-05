@@ -1,0 +1,19 @@
+$blue:    #5267DD;
+$darkblue:#26283d;
+$indigo:  #242946;
+$pink:    #FC5859;
+$gray:    #f7f7f7;
+$white:   #ffffff;
+$darkgrey:#bab9be;
+
+$button-primary: $pink;
+$button-secondary: $blue;
+$button-third: $gray;
+$footer-bg: $indigo;
+$titles: $darkblue;
+$regular-text: $darkgrey;
+
+.button-primary {
+    background-color: $pink;
+    color: $white;
+}

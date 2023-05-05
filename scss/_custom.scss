@@ -1,0 +1,34 @@
+//MY THEME COLORS
+$blue:    #5267DD;
+$darkblue:#26283d;
+$indigo:  #242946;
+$pink:    #FC5859;
+$gray:    #f7f7f7;
+$white:   #ffffff;
+$darkgrey:#bab9be;
+
+$primary:       $pink;
+$secondary:     $indigo;
+$button-primary: $pink;
+$button-secondary: $blue;
+$button-third: $gray;
+$footer-bg: $indigo;
+$titles: $darkblue;
+$regular-text: $darkgrey;
+
+//WHITE AND GRAY COLORS
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
