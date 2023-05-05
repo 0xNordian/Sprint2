@@ -7,15 +7,6 @@ $gray:    #f7f7f7;
 $white:   #ffffff;
 $darkgrey:#bab9be;
 
-$primary:       $pink;
-$secondary:     $indigo;
-$button-primary: $pink;
-$button-secondary: $blue;
-$button-third: $gray;
-$footer-bg: $indigo;
-$titles: $darkblue;
-$regular-text: $darkgrey;
-
 //WHITE AND GRAY COLORS
 // scss-docs-start gray-color-variables
 $white:    #fff;
@@ -29,6 +20,10 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+
+$primary:       $blue;
+$secondary:     $pink;
+$info: $gray-200;
 
 //IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
