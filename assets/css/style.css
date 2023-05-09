@@ -10732,8 +10732,38 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 3rem;
 }
 
+.btn-outline-secondary {
+  border-bottom: 1px solid rgb(212, 212, 212);
+  width: 100%;
+}
+
+@media (max-width: 320px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
+@media (min-width: 321px) and (max-width: 374px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
+@media (min-width: 425px) and (max-width: 766px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
 .menu {
   display: flex;
   justify-content: space-around;
@@ -10865,6 +10895,23 @@ textarea.form-control-lg {
   border-radius: 0px 75px 75px 0px;
   z-index: -1;
   object-fit: cover;
+}
+
+.hero-description {
+  font-weight: lighter;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+@media (max-width: 320px) {
+  .feat-desc {
+    font-size: medium;
+    width: 90%;
+    font-weight: lighter;
+  }
+  .feat-desc--link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
