@@ -1,64 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon-32x32.png"
+    />
     <title>Sprint 2. Maquetació II</title>
-</head>
-<body class="">
-<!--NAVBAR-->
-<div class="d-flex justify-content-around">
-  <nav style="width: 100%;" class="px-4 pt-4 navbar navbar-expand-lg navbar-light bg-light">
-    <a style="width: 60%;" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark.svg"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="px-2 nav-item bg-secondary border border-danger rounded" style="width: 75px;">
+  </head>
+  <body class="mx-md-5">
+    <!--NAVBAR-->
+    <div class="menu">
+      <nav
+        class="container px-4 pt-4 navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <div class="container-fluid">
+          <a style="width: 60%" class="navbar-brand" href="#"
+            ><img src="/assets/images/logo-bookmark.svg"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- <li class="px-2 nav-item bg-secondary border border-danger rounded" style="width: 75px;">
           <a class="nav-link text-white" href="#">Login</a>
-        </li>
-      </ul>
+        </li> -->
+            </ul>
+            <button
+              type="button"
+              class="rounded bg-secondary shadow-sm border px-4 py-1 text-white"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
 
-<!--HERO-->
-<section class="hero">
-  <div class="container" style="padding-right: 0px;">
-    <div id="image-container" class="hero-content d-flex flex-column align-items-center mt-4">
-      <div class="position-relative">
-        <img src="/assets/images/illustration-hero.svg" alt="Hero Image" style="width: 85%;" class="hero-image mx-auto d-block">
-        <div style="z-index: -1; height: 135px; border-radius: 75px 0 0px 75px; position: absolute; top: 55px; right: 0px;" class="w-75 bg-primary"></div>
-      </div>
-      <div class="hero-text mt-4 text-center">
-        <h1 class="hero-title">A Simple Bookmark Manager</h1>
-        <p class="hero-description fs-6">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn btn-primary shadow-sm">Get it in Chrome</a>
-          <a href="#" class="btn btn-info shadow-sm">Get it in Firefox</a>
+    <!--HERO-->
+    <section class="hero">
+      <!-- <div class="container"> -->
+
+      <div
+        id="image-container"
+        class="hero-content d-flex flex-column align-items-center mt-4"
+      >
+        <div id="hero" class="row">
+          <div id="img-section" class="position-relative hero-img col-md-6 order-md-2">
+            <img
+              src="/assets/images/illustration-hero.svg"
+              alt="Hero Image"
+              class="hero-image mx-auto d-block"
+            />
+            <div
+              id="bg-illustration"
+              class="col-9 col-sm-10 col-md-9 col-lg-9 my-class"
+            ></div>
+          </div>
+          <!-- border border-4 border-danger -->
+          <div id="info-section" class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="hero-title fs-2">A Simple Bookmark Manager</h1>
+            <p class="hero-description fs-6">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="hero-buttons d-flex gap-3">
+              <a href="#" class="btn btn-primary shadow-sm">Get it in Chrome</a>
+              <a href="#" class="btn btn-info shadow-sm">Get it in Firefox</a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <!-- </div> -->
+    </section>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <!-- <script src="/assets/js/bootstrap.bundle.js"></script> -->
+  </body>
 </html>
