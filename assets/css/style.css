@@ -10719,6 +10719,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Add a bottom border to the selected button */
+.feature-btn:focus,
+.feature-btn:active {
+  border-bottom: 2px solid #FC5859;
+  border-radius: 0px;
+}
+
+.border-gnr {
+  border-bottom: 1px solid rgb(212, 212, 212);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -10796,6 +10811,59 @@ textarea.form-control-lg {
 .hero-img img {
   width: 90%;
   height: auto;
+  object-fit: cover;
+}
+
+.my-class2 {
+  position: absolute;
+  background-color: #5267DD;
+}
+
+@media (max-width: 320px) {
+  .my-class2 {
+    top: 20%;
+    left: 0%;
+    height: 145px;
+  }
+}
+@media (min-width: 321px) and (max-width: 374px) {
+  .my-class2 {
+    top: 20%;
+    left: 0%;
+    height: 155px;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .my-class2 {
+    top: 25%;
+    left: 0%;
+    height: 160px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .my-class2 {
+    top: 25%;
+    left: 0%;
+    height: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .my-class2 {
+    top: 20%;
+    left: 0%;
+    height: 175px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+  .my-class2 {
+    top: 25%;
+    left: 0%;
+    height: 200px;
+  }
+}
+.hero-img #bg-illustration2 {
+  border-radius: 0px 75px 75px 0px;
+  z-index: -1;
   object-fit: cover;
 }
 

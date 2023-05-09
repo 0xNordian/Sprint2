@@ -75,7 +75,10 @@
         class="hero-content d-flex flex-column align-items-center mt-4"
       >
         <div id="hero" class="row">
-          <div id="img-section" class="position-relative hero-img col-md-6 order-md-2">
+          <div
+            id="img-section"
+            class="position-relative hero-img col-md-6 order-md-2"
+          >
             <img
               src="/assets/images/illustration-hero.svg"
               alt="Hero Image"
@@ -87,7 +90,10 @@
             ></div>
           </div>
           <!-- border border-4 border-danger -->
-          <div id="info-section" class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center">
+          <div
+            id="info-section"
+            class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center"
+          >
             <h1 class="hero-title fs-2">A Simple Bookmark Manager</h1>
             <p class="hero-description fs-6">
               A clean and simple interface to organize your favourite websites.
@@ -99,10 +105,120 @@
               <a href="#" class="btn btn-info shadow-sm">Get it in Firefox</a>
             </div>
           </div>
-
         </div>
       </div>
       <!-- </div> -->
+    </section>
+
+    <section class="features">
+      <div class="container my-5">
+        <h2 class="text-center mb-4 fs-4">Features</h2>
+        <p class="fs-6 mx-auto d-block w-50 text-center">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <!-- Link titles -->
+        <div class="mb-4 border-gnr">
+          <button type="button" class="btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="0">
+            Simple Bookmarking
+          </button>
+          <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="1">
+            Speedy Searching
+          </button>
+          <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="2">
+            Easy Sharing
+          </button>
+        </div>
+        
+
+        <div class="row">
+          <div class="hero-img col-md-6">
+            <img
+              src="/assets/images/illustration-hero.svg"
+              alt="Hero Image"
+              class="hero-image mx-auto d-block"
+            />
+            <div
+              id="bg-illustration2"
+              class="col-9 col-sm-10 col-md-8 col-lg-8 my-class2"
+            ></div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- Carousel -->
+            <div
+              id="features-carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h3>Bookmark in one click</h3>
+                  <p>
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
+                  </p>
+                  <!-- Button -->
+                  <div class="hero-buttons d-flex gap-3">
+                    <a href="#" class="btn btn-primary shadow-sm">More info</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <h3>Search Fast</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla at arcu urna. Donec ultrices, massa ut elementum
+                    bibendum, elit est sagittis nibh, vel volutpat velit velit
+                    eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
+                    molestie lorem, vitae placerat mauris velit eu odio.
+                  </p>
+                  <!-- Button -->
+                  <div class="hero-buttons d-flex gap-3">
+                    <a href="#" class="btn btn-primary shadow-sm">More info</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <h3>Search? Piece of cake!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla at arcu urna. Donec ultrices, massa ut elementum
+                    bibendum, elit est sagittis nibh, vel volutpat velit velit
+                    eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
+                    molestie lorem, vitae placerat mauris velit eu odio.
+                  </p>
+                  <!-- Button -->
+                  <div class="hero-buttons d-flex gap-3">
+                    <a href="#" class="btn btn-primary shadow-sm">More info</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <!-- <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#features-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#features-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+      </div>
     </section>
 
     <script
@@ -122,5 +238,16 @@
     ></script>
 
     <!-- <script src="/assets/js/bootstrap.bundle.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        // Listen for click events on feature links
+        $(".btn-link").click(function () {
+          // Get the index of the clicked link
+          var index = $(this).data("bs-slide-to");
+          // Show the corresponding feature section
+          $(".carousel").carousel(index);
+        });
+      });
+    </script>
   </body>
 </html>

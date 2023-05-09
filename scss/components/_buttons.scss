@@ -1,0 +1,16 @@
+@use '../custom' as *;
+
+/* Add a bottom border to the selected button */
+.feature-btn:focus,
+.feature-btn:active {
+  border-bottom: 2px solid $secondary;
+  border-radius: 0px;
+}
+
+.border-gnr{
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
