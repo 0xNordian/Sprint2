@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+.card-w {
+    max-width: 50%;
+  }
+
+.card-title-faq{
+    display: flex;
+    align-items: start;
+}
+
+.faq-font{
+    font-size: medium;
+}
+
+#accordion .card {
+    background-color: white;
+    border: 0px solid $gray;
+  }
+
+#accordion .card-header{
+    background-color: white;
+}
+  

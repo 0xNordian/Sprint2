@@ -10919,6 +10919,28 @@ textarea.form-control-lg {
   border-bottom-color: rgb(220, 220, 220);
 }
 
+.card-w {
+  max-width: 50%;
+}
+
+.card-title-faq {
+  display: flex;
+  align-items: start;
+}
+
+.faq-font {
+  font-size: medium;
+}
+
+#accordion .card {
+  background-color: white;
+  border: 0px solid #f7f7f7;
+}
+
+#accordion .card-header {
+  background-color: white;
+}
+
 .contact-us {
   width: 100%;
   height: 100%;

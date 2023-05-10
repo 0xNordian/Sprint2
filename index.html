@@ -153,47 +153,56 @@
     </div>
   </section>
 
-  <section class="cards d-flex flex-column align-items-center gap-4">
-    <div class="ext-sec d-flex flex-column align-items-center mx-2">
+  <section class="cards align-items-center">
+    <div class="ext-sec text-center mx-2">
       <h1 class="hero-title fs-2">Download the extension</h1>
-      <div class="hero-description fs-6 text-center">
-        We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to
-        prioritize.
+      <div class="hero-description fs-6">
+        We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
       </div>
     </div>
-    <!-- //CHROME -->
-    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
-      <img class="card-img-top w-50" src="/assets/images/logo-chrome.svg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title text-center">Add to Chrome</h5>
-        <p class="card-text text-center">Minimum version 6.2</p>
-        <div class="border-dotted-cust mb-3"></div>
-        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+  
+    <div class="row justify-content-center justify-content-md-start gap-4 gap-sm-0">
+      <!-- //CHROME -->
+      <div class="col-10 col-md-4">
+        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+          <img class="card-img-top w-50" src="/assets/images/logo-chrome.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Add to Chrome</h5>
+            <p class="card-text text-center">Minimum version 6.2</p>
+            <div class="border-dotted-cust mb-3"></div>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- //FIREFOX -->
-    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
-      <img class="card-img-top w-50" src="/assets/images/logo-firefox.svg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title text-center">Add to Firefox</h5>
-        <p class="card-text text-center">Minimum version 55</p>
-        <div class="border-dotted-cust mb-3"></div>
-        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+  
+      <!-- //FIREFOX -->
+      <div class="col-10 col-md-4">
+        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+          <img class="card-img-top w-50" src="/assets/images/logo-firefox.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Add to Firefox</h5>
+            <p class="card-text text-center">Minimum version 55</p>
+            <div class="border-dotted-cust mb-3"></div>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- //OPERA -->
-    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
-      <img class="card-img-top w-50" src="/assets/images/logo-opera.svg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title text-center">Add to Opera</h5>
-        <p class="card-text text-center">Minimum version 46</p>
-        <div class="border-dotted-cust mb-3"></div>
-        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+  
+      <!-- //OPERA -->
+      <div class="col-10 col-md-4">
+        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+          <img class="card-img-top w-50" src="/assets/images/logo-opera.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Add to Opera</h5>
+            <p class="card-text text-center">Minimum version 46</p>
+            <div class="border-dotted-cust mb-3"></div>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  
 
   <section class="faq mt-4">
     <div class="ext-sec d-flex flex-column align-items-center mx-3 text-center">
@@ -203,17 +212,18 @@
       </div>
 
       <!-- ACCORDION -->
-      <div id="accordion">
-        <div class="card w-100">
-          <div class="card-header text-left" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
-                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fas fa-angle-down"></i>What is Bookmark?
-              </button>
+      <div id="accordion" class="card-w w-100">
+        <div class="card mb-2">
+          <div class="card-header text-left d-flex justify-content-between align-items-center" id="headingOne">
+            <h5 class="mb-0 faq-font">
+              What is Bookmark?
             </h5>
+            <button class="btn btn-link collapsed text-decoration-none card-title-faq" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <img src="/assets/images/icon-arrow.svg" alt="arrow" class="">
+            </button>
           </div>
-
+          
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
@@ -223,64 +233,66 @@
           </div>
         </div>
 
-        <div class="card w-100">
-          <div class="card-header text-left" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
-                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fas fa-angle-down"></i>How can I request a new browser?
-              </button>
+        <div class="card mb-2">
+          <div class="card-header text-left d-flex justify-content-between align-items-center" id="headingTwo">
+            <h5 class="mb-0 faq-font">
+              How can I request a new browser?
             </h5>
+            <button class="btn btn-link collapsed text-decoration-none card-title-faq" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <img src="/assets/images/icon-arrow.svg" alt="arrow" class="">
+            </button>
           </div>
-
+          
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, aperiam minus pariatur ad nesciunt
-              corporis. Nam, alias repellendus incidunt fugiat tempore rem eligendi, facilis, neque similique rerum eum
-              fuga maxime!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
+              minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
+              in!
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-header text-left d-flex justify-content-between align-items-center" id="headingThree">
+            <h5 class="mb-0 faq-font">
+              Is there a mobile app?
+            </h5>
+            <button class="btn btn-link collapsed text-decoration-none card-title-faq" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <img src="/assets/images/icon-arrow.svg" alt="arrow" class="">
+            </button>
+          </div>
+          
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
+              minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
+              in!
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-header text-left d-flex justify-content-between align-items-center" id="headingFour">
+            <h5 class="mb-0 faq-font">
+              What about other Chromium browsers?
+            </h5>
+            <button class="btn btn-link collapsed text-decoration-none card-title-faq" data-toggle="collapse"
+              data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <img src="/assets/images/icon-arrow.svg" alt="arrow" class="">
+            </button>
+          </div>
+          
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
+              minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
+              in!
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card w-100">
-        <div class="card-header text-left" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
-              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fas fa-angle-down"></i>Is there a mobile app?
-            </button>
-          </h5>
-        </div>
-
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, aperiam minus pariatur ad nesciunt
-            corporis. Nam, alias repellendus incidunt fugiat tempore rem eligendi, facilis, neque similique rerum eum
-            fuga maxime!
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card w-100">
-      <div class="card-header text-left" id="headingFour">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse" data-target="#collapseFour"
-            aria-expanded="false" aria-controls="collapseFour">
-            <i class="fas fa-angle-down"></i>What about other Chronium browsers?
-          </button>
-        </h5>
-      </div>
-
-      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-        <div class="card-body">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, aperiam minus pariatur ad nesciunt
-          corporis. Nam, alias repellendus incidunt fugiat tempore rem eligendi, facilis, neque similique rerum eum
-          fuga maxime!
-        </div>
-      </div>
-    </div>
     </div>
 
     <div class="hero-buttons d-flex gap-3 mt-4 justify-content-center">
@@ -301,7 +313,7 @@
 
   <section class="footer d-flex flex-column align-items-center text-center">
     <div class="container-fluid mt-5">
-      <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark.svg" /></a>
+      <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark (1).png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
