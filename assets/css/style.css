@@ -10913,5 +10913,10 @@ textarea.form-control-lg {
     flex-direction: column;
   }
 }
+.border-dotted-cust {
+  border-bottom-style: dotted;
+  border-bottom-width: 4px;
+  border-bottom-color: rgb(220, 220, 220);
+}
 
 /*# sourceMappingURL=style.css.map */

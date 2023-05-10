@@ -1,253 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/images/favicon-32x32.png"
-    />
-    <title>Sprint 2. Maquetació II</title>
-  </head>
-  <body class="mx-md-5">
-    <!--NAVBAR-->
-    <div class="menu">
-      <nav
-        class="container px-4 pt-4 navbar navbar-expand-lg navbar-light bg-light"
-      >
-        <div class="container-fluid">
-          <a style="width: 60%" class="navbar-brand" href="#"
-            ><img src="/assets/images/logo-bookmark.svg"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#features-sec">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <!-- <li class="px-2 nav-item bg-secondary border border-danger rounded" style="width: 75px;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png" />
+  <title>Sprint 2. Maquetació II</title>
+</head>
+
+<body class="mx-md-5">
+  <!--NAVBAR-->
+  <div class="menu">
+    <nav class="container px-4 pt-4 navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#features-sec">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <!-- <li class="px-2 nav-item bg-secondary border border-danger rounded" style="width: 75px;">
           <a class="nav-link text-white" href="#">Login</a>
         </li> -->
-            </ul>
-            <button
-              type="button"
-              class="rounded bg-secondary shadow-sm border px-4 py-1 text-white"
-            >
-              Login
-            </button>
-          </div>
+          </ul>
+          <button type="button" class="rounded bg-secondary shadow-sm border px-4 py-1 text-white">
+            Login
+          </button>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
-    <!--HERO-->
-    <section class="hero">
-      <!-- <div class="container"> -->
+  <!--HERO-->
+  <section class="hero">
+    <!-- <div class="container"> -->
 
-      <div
-        id="image-container"
-        class="hero-content d-flex flex-column align-items-center mt-4"
-      >
-        <div id="hero" class="row">
-          <div
-            id="img-section"
-            class="position-relative hero-img col-md-6 order-md-2"
-          >
-            <img
-              src="/assets/images/illustration-hero.svg"
-              alt="Hero Image"
-              class="hero-image mx-auto d-block"
-            />
-            <div
-              id="bg-illustration"
-              class="col-9 col-sm-10 col-md-9 col-lg-9 my-class"
-            ></div>
-          </div>
-          <!-- border border-4 border-danger -->
-          <div
-            id="info-section"
-            class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center"
-          >
-            <h1 class="hero-title fs-2">A Simple Bookmark Manager</h1>
-            <p class="hero-description fs-6">
-              A clean and simple interface to organize your favourite websites.
-              Open a new browser tab and see your sites load instantly. Try it
-              for free.
-            </p>
-            <div class="hero-buttons d-flex gap-3">
-              <a href="#" class="btn btn-primary shadow-sm">Get it in Chrome</a>
-              <a href="#" class="btn btn-info shadow-sm">Get it in Firefox</a>
-            </div>
+    <div id="image-container" class="hero-content d-flex flex-column align-items-center mt-4">
+      <div id="hero" class="row">
+        <div id="img-section" class="position-relative hero-img col-md-6 order-md-2">
+          <img src="/assets/images/illustration-hero.svg" alt="Hero Image" class="hero-image mx-auto d-block" />
+          <div id="bg-illustration" class="col-9 col-sm-10 col-md-9 col-lg-9 my-class"></div>
+        </div>
+        <!-- border border-4 border-danger -->
+        <div id="info-section"
+          class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center">
+          <h1 class="hero-title fs-2">A Simple Bookmark Manager</h1>
+          <p class="hero-description fs-6">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it
+            for free.
+          </p>
+          <div class="hero-buttons d-flex gap-3">
+            <a href="#" class="btn btn-primary shadow-sm">Get it in Chrome</a>
+            <a href="#" class="btn btn-info shadow-sm">Get it in Firefox</a>
           </div>
         </div>
       </div>
-      <!-- </div> -->
-    </section>
+    </div>
+    <!-- </div> -->
+  </section>
 
-    <section class="features">
-      <div class="container my-5">
-        <h2 id="features-sec" class="text-center mb-4 fs-4">Features</h2>
-        <p class="mx-auto d-block text-center feat-desc">
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-        <!-- Link titles -->
-        <div class="border-gnr feat-desc--link">
-          <button type="button" class="btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="0">
-            Simple Bookmarking
-          </button>
-          <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="1">
-            Speedy Searching
-          </button>
-          <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn" data-bs-target="#features-carousel" data-bs-slide-to="2">
-            Easy Sharing
-          </button>
+  <section class="features">
+    <div class="container my-5">
+      <h2 id="features-sec" class="text-center mb-4 fs-4">Features</h2>
+      <p class="mx-auto d-block text-center feat-desc">
+        Our aim is to make it quick and easy for you to access your favourite
+        websites. Your bookmarks sync between your devices so you can access
+        them on the go.
+      </p>
+      <!-- Link titles -->
+      <div class="border-gnr feat-desc--link">
+        <button type="button" class="btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel"
+          data-bs-slide-to="0">
+          Simple Bookmarking
+        </button>
+        <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn"
+          data-bs-target="#features-carousel" data-bs-slide-to="1">
+          Speedy Searching
+        </button>
+        <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn"
+          data-bs-target="#features-carousel" data-bs-slide-to="2">
+          Easy Sharing
+        </button>
+      </div>
+
+
+      <div class="row">
+        <div class="hero-img col-md-6">
+          <img src="/assets/images/illustration-hero.svg" alt="Hero Image" class="hero-image mx-auto d-block" />
+          <div id="bg-illustration2" class="col-9 col-sm-10 col-md-8 col-lg-8 my-class2"></div>
         </div>
-        
 
-        <div class="row">
-          <div class="hero-img col-md-6">
-            <img
-              src="/assets/images/illustration-hero.svg"
-              alt="Hero Image"
-              class="hero-image mx-auto d-block"
-            />
-            <div
-              id="bg-illustration2"
-              class="col-9 col-sm-10 col-md-8 col-lg-8 my-class2"
-            ></div>
-          </div>
-
-          <div class="col-md-6">
-            <!-- Carousel -->
-            <div
-              id="features-carousel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <!-- Slides -->
-              <div class="carousel-inner mt-4">
-                <div class="carousel-item active hero-description">
-                  <h3>Bookmark in one click</h3>
-                  <p>
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
-                  </p>
-                  <!-- Button -->
-                  <div class="hero-buttons d-flex gap-3">
-                    <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
-                  </div>
+        <div class="col-md-6">
+          <!-- Carousel -->
+          <div id="features-carousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Slides -->
+            <div class="carousel-inner mt-4">
+              <div class="carousel-item active hero-description">
+                <h3>Bookmark in one click</h3>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <!-- Button -->
+                <div class="hero-buttons d-flex gap-3">
+                  <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
                 </div>
-                <div class="carousel-item hero-description">
-                  <h3>Search Fast</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla at arcu urna. Donec ultrices, massa ut elementum
-                    bibendum, elit est sagittis nibh, vel volutpat velit velit
-                    eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
-                    molestie lorem, vitae placerat mauris velit eu odio.
-                  </p>
-                  <!-- Button -->
-                  <div class="hero-buttons d-flex gap-3">
-                    <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
-                  </div>
+              </div>
+              <div class="carousel-item hero-description">
+                <h3>Search Fast</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla at arcu urna. Donec ultrices, massa ut elementum
+                  bibendum, elit est sagittis nibh, vel volutpat velit velit
+                  eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
+                  molestie lorem, vitae placerat mauris velit eu odio.
+                </p>
+                <!-- Button -->
+                <div class="hero-buttons d-flex gap-3">
+                  <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
                 </div>
-                <div class="carousel-item hero-description">
-                  <h3>Search? Piece of cake!</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla at arcu urna. Donec ultrices, massa ut elementum
-                    bibendum, elit est sagittis nibh, vel volutpat velit velit
-                    eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
-                    molestie lorem, vitae placerat mauris velit eu odio.
-                  </p>
-                  <!-- Button -->
-                  <div class="hero-buttons d-flex gap-3">
-                    <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
-                  </div>
+              </div>
+              <div class="carousel-item hero-description">
+                <h3>Search? Piece of cake!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla at arcu urna. Donec ultrices, massa ut elementum
+                  bibendum, elit est sagittis nibh, vel volutpat velit velit
+                  eget velit. Nam suscipit, nisi eu sodales pretium, dolor est
+                  molestie lorem, vitae placerat mauris velit eu odio.
+                </p>
+                <!-- Button -->
+                <div class="hero-buttons d-flex gap-3">
+                  <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Controls -->
-        <!-- <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#features-carousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#features-carousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <section class="cards d-flex flex-column align-items-center gap-4">
+    <div class="ext-sec d-flex flex-column align-items-center mx-2">
+      <h1 class="hero-title fs-2">Download the extension</h1>
+      <div class="hero-description fs-6 text-center">
+        We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to
+        prioritize.
+      </div>
+    </div>
+    <!-- //CHROME -->
+    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
+      <img class="card-img-top w-50" src="/assets/images/logo-chrome.svg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Add to Chrome</h5>
+        <p class="card-text text-center">Minimum version 6.2</p>
+        <div class="border-dotted-cust mb-3"></div>
+        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+      </div>
+    </div>
 
-    <!-- <script src="/assets/js/bootstrap.bundle.js"></script> -->
-    <script>
-      $(document).ready(function () {
-        // Listen for click events on feature links
-        $(".btn-link").click(function () {
-          // Get the index of the clicked link
-          var index = $(this).data("bs-slide-to");
-          // Show the corresponding feature section
-          $(".carousel").carousel(index);
-        });
+    <!-- //FIREFOX -->
+    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
+      <img class="card-img-top w-50" src="/assets/images/logo-firefox.svg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Add to Firefox</h5>
+        <p class="card-text text-center">Minimum version 55</p>
+        <div class="border-dotted-cust mb-3"></div>
+        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+      </div>
+    </div>
+
+    <!-- //OPERA -->
+    <div class="card d-flex align-items-center pt-4" style="width: 18rem;">
+      <img class="card-img-top w-50" src="/assets/images/logo-opera.svg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Add to Opera</h5>
+        <p class="card-text text-center">Minimum version 46</p>
+        <div class="border-dotted-cust mb-3"></div>
+        <a href="#" class="btn btn-primary">Add & Install Extension</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="/assets/js/bootstrap.bundle.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      // Listen for click events on feature links
+      $(".btn-link").click(function () {
+        // Get the index of the clicked link
+        var index = $(this).data("bs-slide-to");
+        // Show the corresponding feature section
+        $(".carousel").carousel(index);
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
