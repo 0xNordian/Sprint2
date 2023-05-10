@@ -1,0 +1,12 @@
+@use '../custom' as *;
+
+.footer{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    background-color: $darkblue;
+}
+
+.footer-text{
+    color: $gray;
+}

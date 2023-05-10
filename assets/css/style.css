@@ -10921,8 +10921,9 @@ textarea.form-control-lg {
 
 .contact-us {
   width: 100%;
-  height: 400px;
+  height: 100%;
   margin-top: 3rem;
+  padding-bottom: 4rem;
   background-color: #5267DD;
 }
 
@@ -10932,6 +10933,17 @@ textarea.form-control-lg {
 
 input::placeholder {
   font-size: 16px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+  background-color: #26283d;
+}
+
+.footer-text {
+  color: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */
