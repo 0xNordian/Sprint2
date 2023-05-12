@@ -1,8 +1,26 @@
 @use '../custom' as *;
 
 .card-w {
-    max-width: 50%;
+    max-width: 100%;
   }
+
+@media (min-width: 300px) and (max-width: 425px){
+.card-faq-w{
+    width: 400px;
+}
+}
+
+@media (min-width: 426px) and (max-width: 1024px){
+  .card-faq-w{
+      width: 600px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 2560px){
+  .card-faq-w{
+      width: 800px;
+  }
+}
 
 .card-title-faq{
     display: flex;

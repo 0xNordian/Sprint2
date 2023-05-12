@@ -10764,6 +10764,25 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
+* {
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.titles {
+  font-size: 1.75rem;
+  color: #242946;
+}
+
+.sub-titles {
+  font-size: 1.15rem;
+}
+
+.reg-txt {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #bab9be;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -10774,6 +10793,10 @@ textarea.form-control-lg {
 }
 .menu #navbarNavDropdown {
   gap: 1rem;
+}
+
+.navbar-toggler {
+  border: 0px;
 }
 
 #hero {
@@ -10913,16 +10936,65 @@ textarea.form-control-lg {
     flex-direction: column;
   }
 }
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .card-ext {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1750px) and (max-width: 2560px) {
+  .card-ext {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding: 2rem 0rem 3rem 0rem;
+  }
+}
 .border-dotted-cust {
   border-bottom-style: dotted;
   border-bottom-width: 4px;
   border-bottom-color: rgb(220, 220, 220);
 }
 
-.card-w {
-  max-width: 50%;
+.custom-card-top {
+  position: relative;
+  top: 0;
 }
 
+.custom-card-middle {
+  position: relative;
+  top: 0%;
+  transform: translateY(10%);
+}
+
+.custom-card-bottom {
+  position: relative;
+  top: 0%;
+  transform: translateY(20%);
+}
+
+.mr-section-ext {
+  margin-bottom: 8rem;
+}
+
+.card-w {
+  max-width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+  .card-faq-w {
+    width: 400px;
+  }
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  .card-faq-w {
+    width: 600px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .card-faq-w {
+    width: 800px;
+  }
+}
 .card-title-faq {
   display: flex;
   align-items: start;

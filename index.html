@@ -14,8 +14,8 @@
 <body class="mx-md-5">
   <!--NAVBAR-->
   <div class="menu">
-    <nav class="container px-4 pt-4 navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="container px-4 pt-4 navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid nav-mob-style">
         <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark.svg" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,8 +54,8 @@
         <!-- border border-4 border-danger -->
         <div id="info-section"
           class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center">
-          <h1 class="hero-title fs-2">A Simple Bookmark Manager</h1>
-          <p class="hero-description fs-6">
+          <h1 class="hero-title titles">A Simple Bookmark Manager</h1>
+          <p class="hero-description reg-txt">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it
             for free.
@@ -72,23 +72,23 @@
 
   <section class="features">
     <div class="container my-5">
-      <h2 id="features-sec" class="text-center mb-4 fs-4">Features</h2>
-      <p class="mx-auto d-block text-center feat-desc">
+      <h2 id="features-sec" class="text-center mb-4 titles">Features</h2>
+      <p class="mx-auto d-block text-center feat-desc reg-txt">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
       <!-- Link titles -->
       <div class="border-gnr feat-desc--link">
-        <button type="button" class="btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel"
+        <button type="button" class="sub-titles btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel"
           data-bs-slide-to="0">
           Simple Bookmarking
         </button>
-        <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn"
+        <button type="button" class="sub-titles btn btn-link ms-3 text-decoration-none feature-btn"
           data-bs-target="#features-carousel" data-bs-slide-to="1">
           Speedy Searching
         </button>
-        <button type="button" class="btn btn-link ms-3 text-decoration-none feature-btn"
+        <button type="button" class="sub-titles btn btn-link ms-3 text-decoration-none feature-btn"
           data-bs-target="#features-carousel" data-bs-slide-to="2">
           Easy Sharing
         </button>
@@ -107,8 +107,8 @@
             <!-- Slides -->
             <div class="carousel-inner mt-4">
               <div class="carousel-item active hero-description">
-                <h3>Bookmark in one click</h3>
-                <p>
+                <h3 class="titles">Bookmark in one click</h3>
+                <p class="reg-txt">
                   Organize your bookmarks however you like. Our simple
                   drag-and-drop interface gives you complete control over how
                   you manage your favourite sites.
@@ -119,8 +119,8 @@
                 </div>
               </div>
               <div class="carousel-item hero-description">
-                <h3>Search Fast</h3>
-                <p>
+                <h3 class="titles">Search Fast</h3>
+                <p class="reg-txt">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nulla at arcu urna. Donec ultrices, massa ut elementum
                   bibendum, elit est sagittis nibh, vel volutpat velit velit
@@ -133,8 +133,8 @@
                 </div>
               </div>
               <div class="carousel-item hero-description">
-                <h3>Search? Piece of cake!</h3>
-                <p>
+                <h3 class="titles">Search? Piece of cake!</h3>
+                <p class="reg-txt">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nulla at arcu urna. Donec ultrices, massa ut elementum
                   bibendum, elit est sagittis nibh, vel volutpat velit velit
@@ -153,22 +153,23 @@
     </div>
   </section>
 
-  <section class="cards align-items-center">
+<!-- EXTENSIONS -->
+  <section class="cards align-items-center mr-section-ext">
     <div class="ext-sec text-center mx-2">
-      <h1 class="hero-title fs-2">Download the extension</h1>
-      <div class="hero-description fs-6">
+      <h1 class="hero-title titles">Download the extension</h1>
+      <div class="hero-description reg-txt">
         We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
       </div>
     </div>
   
-    <div class="row justify-content-center justify-content-md-start gap-4 gap-sm-0">
+    <div class="row justify-content-center justify-content-md-start justify-content-lg-center gap-4 gap-sm-0">
       <!-- //CHROME -->
-      <div class="col-10 col-md-4">
-        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+      <div class="col-10 col-md-4 col-lg-3 custom-card-top cust-shadow">
+        <div class="card card-ext d-flex align-items-center pt-4">
           <img class="card-img-top w-50" src="/assets/images/logo-chrome.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-center">Add to Chrome</h5>
-            <p class="card-text text-center">Minimum version 6.2</p>
+            <p class="card-text text-center reg-txt">Minimum version 6.2</p>
             <div class="border-dotted-cust mb-3"></div>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
@@ -176,12 +177,12 @@
       </div>
   
       <!-- //FIREFOX -->
-      <div class="col-10 col-md-4">
-        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+      <div class="col-10 col-md-4 col-lg-3 custom-card-middle cust-shadow">
+        <div class="card card-ext d-flex align-items-center pt-4 " style="width: 100%;">
           <img class="card-img-top w-50" src="/assets/images/logo-firefox.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-center">Add to Firefox</h5>
-            <p class="card-text text-center">Minimum version 55</p>
+            <p class="card-text text-center reg-txt">Minimum version 55</p>
             <div class="border-dotted-cust mb-3"></div>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
@@ -189,12 +190,12 @@
       </div>
   
       <!-- //OPERA -->
-      <div class="col-10 col-md-4">
-        <div class="card d-flex align-items-center pt-4" style="width: 100%;">
+      <div class="col-10 col-md-4 col-lg-3 custom-card-bottom">
+        <div class="card card-ext d-flex align-items-center pt-4" style="width: 100%;">
           <img class="card-img-top w-50" src="/assets/images/logo-opera.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-center">Add to Opera</h5>
-            <p class="card-text text-center">Minimum version 46</p>
+            <p class="card-text text-center reg-txt">Minimum version 46</p>
             <div class="border-dotted-cust mb-3"></div>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
@@ -206,13 +207,13 @@
 
   <section class="faq mt-4">
     <div class="ext-sec d-flex flex-column align-items-center mx-3 text-center">
-      <h1 class="hero-title fs-2">Frequently Asked Questions</h1>
-      <div class="hero-description fs-6 text-center">
+      <h1 class="hero-title titles">Frequently Asked Questions</h1>
+      <div class="hero-description reg-txt text-center">
         Here are some of out FAQs. If you have any other questions you'd like answered please feel free to email us.
       </div>
 
       <!-- ACCORDION -->
-      <div id="accordion" class="card-w w-100">
+      <div id="accordion" class="card-faq-w card-w">
         <div class="card mb-2">
           <div class="card-header text-left d-flex justify-content-between align-items-center" id="headingOne">
             <h5 class="mb-0 faq-font">
@@ -225,7 +226,7 @@
           </div>
           
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body reg-txt">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
               minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
               in!
@@ -245,7 +246,7 @@
           </div>
           
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body reg-txt">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
               minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
               in!
@@ -265,7 +266,7 @@
           </div>
           
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body reg-txt">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
               minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
               in!
@@ -285,7 +286,7 @@
           </div>
           
           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body reg-txt">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero blanditiis sapiente? Repellat sit
               minima aliquam reprehenderit in vel iusto, soluta, sapiente mollitia nam libero eius debitis. Et, saepe
               in!
