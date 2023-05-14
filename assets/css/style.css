@@ -10719,51 +10719,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Add a bottom border to the selected button */
-.feature-btn:focus,
-.feature-btn:active {
-  border-bottom: 2px solid #FC5859;
-  border-radius: 0px;
+.border-check {
+  border: 1px solid #FC5859;
 }
 
-.border-gnr {
-  border-bottom: 1px solid rgb(212, 212, 212);
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 3rem;
-}
-
-.btn-outline-secondary {
-  border-bottom: 1px solid rgb(212, 212, 212);
-  width: 100%;
-}
-
-@media (max-width: 320px) {
-  .btn-outline-secondary {
-    border-bottom: 1px solid rgb(212, 212, 212);
-    width: 100%;
-  }
-}
-@media (min-width: 321px) and (max-width: 374px) {
-  .btn-outline-secondary {
-    border-bottom: 1px solid rgb(212, 212, 212);
-    width: 100%;
-  }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-  .btn-outline-secondary {
-    border-bottom: 1px solid rgb(212, 212, 212);
-    width: 100%;
-  }
-}
-@media (min-width: 425px) and (max-width: 766px) {
-  .btn-outline-secondary {
-    border-bottom: 1px solid rgb(212, 212, 212);
-    width: 100%;
-  }
-}
 * {
   font-family: "Arial", Helvetica, sans-serif;
 }
@@ -10773,19 +10732,41 @@ textarea.form-control-lg {
   color: #242946;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .titles {
+    font-size: 2rem;
+    color: #242946;
+  }
+}
 .sub-titles {
   font-size: 1.15rem;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .sub-titles {
+    font-size: 1.75rem;
+  }
+}
 .reg-txt {
   font-size: 1rem;
   font-weight: lighter;
   color: #bab9be;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .reg-txt {
+    font-size: 1.35rem;
+    font-weight: lighter;
+    color: #bab9be;
+  }
+}
+body {
+  margin: 0rem 1rem;
+}
+
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menu li .nav-link {
   text-transform: uppercase;
@@ -10850,6 +10831,20 @@ textarea.form-control-lg {
     height: 200px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1596px) {
+  .my-class {
+    top: 20%;
+    right: 0%;
+    height: 325px;
+  }
+}
+@media (min-width: 1597px) {
+  .my-class {
+    top: 25%;
+    right: 0%;
+    height: 30rem;
+  }
+}
 .hero-img {
   position: relative;
   overflow: hidden;
@@ -10875,7 +10870,7 @@ textarea.form-control-lg {
 @media (max-width: 320px) {
   .my-class2 {
     top: 20%;
-    left: 0%;
+    left: 3.5%;
     height: 145px;
   }
 }
@@ -10914,6 +10909,27 @@ textarea.form-control-lg {
     height: 200px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .my-class2 {
+    top: 20%;
+    left: 2%;
+    height: 275px;
+  }
+}
+@media (min-width: 1251px) and (max-width: 1440px) {
+  .my-class2 {
+    top: 20%;
+    left: 2%;
+    height: 325px;
+  }
+}
+@media (min-width: 1441px) {
+  .my-class2 {
+    top: 20%;
+    left: 2%;
+    height: 525px;
+  }
+}
 .hero-img #bg-illustration2 {
   border-radius: 0px 75px 75px 0px;
   z-index: -1;
@@ -10925,17 +10941,86 @@ textarea.form-control-lg {
   margin: 1rem 0rem 2rem 0rem;
 }
 
-@media (max-width: 320px) {
+/* Add a bottom border to the selected button */
+.feature-btn:focus,
+.feature-btn:active {
+  border-bottom: 2px solid #FC5859;
+  border-radius: 0px;
+}
+
+.btn-outline-secondary {
+  border-bottom: 1px solid rgb(212, 212, 212);
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .border-edge {
+    border-top: 1px solid #bab9be;
+    border-bottom: 1px solid #bab9be;
+    margin-bottom: 3rem;
+    max-width: 80%;
+    display: flex;
+  }
+}
+.border-bott {
+  border-bottom: 1px solid #bab9be;
+  border-radius: 0rem;
+}
+
+.feature-align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .feature-align-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+  }
+}
+@media (max-width: 425px) {
   .feat-desc {
     font-size: medium;
     width: 90%;
-    font-weight: lighter;
   }
   .feat-desc--link {
     display: flex;
     flex-direction: column;
   }
 }
+@media (min-width: 320px) and (max-width: 424px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
+@media (min-width: 425px) and (max-width: 766px) {
+  .btn-outline-secondary {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+  }
+}
+.card {
+  border: 0px;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.gap-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.cust-shadow {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 0.7rem;
+}
+
 @media (min-width: 1024px) and (max-width: 1280px) {
   .card-ext {
     max-width: 350px;
@@ -10972,10 +11057,21 @@ textarea.form-control-lg {
   transform: translateY(20%);
 }
 
-.mr-section-ext {
-  margin-bottom: 8rem;
+@media (min-width: 320px) and (max-width: 425px) {
+  .mr-section-ext {
+    margin-bottom: 2rem;
+  }
 }
-
+@media (min-width: 768px) {
+  .mr-section-ext {
+    margin-bottom: 8rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .height-sm {
+    height: 80rem;
+  }
+}
 .card-w {
   max-width: 100%;
 }
@@ -11004,6 +11100,11 @@ textarea.form-control-lg {
   font-size: medium;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .faq-font {
+    font-size: 1.35rem;
+  }
+}
 #accordion .card {
   background-color: white;
   border: 0px solid #f7f7f7;
@@ -11013,6 +11114,21 @@ textarea.form-control-lg {
   background-color: white;
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
+  .w-cust {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .w-cust {
+    width: 45%;
+  }
+}
+@media (min-width: 1440px) {
+  .w-cust {
+    width: 35%;
+  }
+}
 .contact-us {
   width: 100%;
   height: 100%;
@@ -11038,6 +11154,12 @@ input::placeholder {
 
 .footer-text {
   color: #f7f7f7;
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .footer-text {
+    font-size: 1.35rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

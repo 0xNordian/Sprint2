@@ -1,5 +1,23 @@
 @use '../custom' as *;
 
+@media (min-width: 320px) and (max-width: 425px) {
+    .w-cust{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.w-cust{
+    width: 45%;
+}
+}
+
+@media (min-width: 1440px){
+    .w-cust{
+        width: 35%;
+    }
+}
+
 .contact-us{
     width: 100%;
     height: 100%;

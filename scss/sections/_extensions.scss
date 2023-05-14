@@ -1,5 +1,23 @@
 @use '../custom' as *;
 
+.card{
+    border: 0px;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.gap-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.cust-shadow{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: .7rem;
+}
+
 @media (min-width: 1024px) and (max-width: 1280px) {
     .card-ext{
         max-width: 350px;
@@ -39,6 +57,21 @@
     transform: translateY(20%);
   }
   
+  @media (min-width: 320px) and (max-width: 425px) {  
+.mr-section-ext{
+    margin-bottom: 2rem;
+}
+  }
+
+@media (min-width: 768px) {
 .mr-section-ext{
     margin-bottom: 8rem;
+}
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+.height-sm{
+    height: 80rem; //No entiendo porque el height auto no funciona
+    //border: 1px solid black;
+}
 }

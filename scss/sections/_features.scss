@@ -1,43 +1,68 @@
 @use '../custom' as *;
 
-@media (max-width: 320px) {
+/* Add a bottom border to the selected button */
+.feature-btn:focus,
+.feature-btn:active {
+  border-bottom: 2px solid $secondary;
+  border-radius: 0px;
+}
+
+.btn-outline-secondary {
+border-bottom: 1px solid rgb(212, 212, 212);
+width: 100%;
+}
+
+@media (max-width: 425px) {
+.border-edge{
+  border-top: 1px solid $darkgrey;
+  border-bottom: 1px solid $darkgrey;
+  margin-bottom: 3rem;
+  max-width: 80%;
+  display: flex;
+}
+}
+
+.border-bott{
+  border-bottom: 1px solid $darkgrey;
+  border-radius: 0rem;
+}
+
+.feature-align{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .feature-align-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+  }
+}
+
+@media (max-width: 425px) {
     .feat-desc {
         font-size: medium;
         width: 90%;
-        font-weight: lighter;
         &--link{
             display: flex;
             flex-direction: column;
         }
     }
   }
-
-  @media (min-width: 321px) and (max-width: 374px) {
-    .feat-desc {
-
+    
+    @media (min-width: 320px) and (max-width: 424px) {
+    .btn-outline-secondary {
+        border-bottom: 1px solid rgb(212, 212, 212);
+        width: 100%;
     }
-  }
-
-  @media (min-width: 375px) and (max-width: 424px) {
-    .feat-desc {
-
     }
-  }
-
-  @media (min-width: 425px) and (max-width: 767px) {
-    .feat-desc {
-
+    
+    @media (min-width: 425px) and (max-width: 766px) {
+    .btn-outline-secondary {
+        border-bottom: 1px solid rgb(212, 212, 212);
+        width: 100%;
     }
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    .feat-desc {
-
     }
-  }
-
-  @media (min-width: 991px) and (max-width: 1024px) {
-    .feat-desc {
-
-    }
-  }

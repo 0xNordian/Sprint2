@@ -10,3 +10,9 @@
 .footer-text{
     color: $gray;
 }
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .footer-text{
+        font-size: 1.35rem;
+    }
+}

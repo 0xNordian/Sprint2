@@ -27,3 +27,7 @@ $info: $gray-200;
 
 //IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.border-check{
+    border: 1px solid $secondary;
+}

@@ -11,9 +11,9 @@
   <title>Sprint 2. Maquetació II</title>
 </head>
 
-<body class="mx-md-5">
+<body class="mx-md-5 border-check">
   <!--NAVBAR-->
-  <div class="menu">
+  <div class="menu border-check">
     <nav class="container px-4 pt-4 navbar navbar-expand-lg navbar-light">
       <div class="container-fluid nav-mob-style">
         <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark.svg" /></a>
@@ -42,18 +42,16 @@
   </div>
 
   <!--HERO-->
-  <section class="hero">
-    <!-- <div class="container"> -->
-
+  <section class="hero border-check">
     <div id="image-container" class="hero-content d-flex flex-column align-items-center mt-4">
       <div id="hero" class="row">
-        <div id="img-section" class="position-relative hero-img col-md-6 order-md-2">
+        <div id="img-section" class="position-relative hero-img col-sm-6 order-sm-2">
           <img src="/assets/images/illustration-hero.svg" alt="Hero Image" class="hero-image mx-auto d-block" />
           <div id="bg-illustration" class="col-9 col-sm-10 col-md-9 col-lg-9 my-class"></div>
         </div>
         <!-- border border-4 border-danger -->
         <div id="info-section"
-          class="hero-text mt-4 text-center col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center">
+          class="hero-text mt-4 text-center col-sm-6 order-sm-1 d-flex flex-column align-items-center justify-content-center">
           <h1 class="hero-title titles">A Simple Bookmark Manager</h1>
           <p class="hero-description reg-txt">
             A clean and simple interface to organize your favourite websites.
@@ -69,26 +67,27 @@
     </div>
     <!-- </div> -->
   </section>
-
-  <section class="features">
-    <div class="container my-5">
-      <h2 id="features-sec" class="text-center mb-4 titles">Features</h2>
-      <p class="mx-auto d-block text-center feat-desc reg-txt">
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
+  <!-- FEATURES -->
+  <section class="features border-check">
+    <div class="container my-5 mt-sm-5 mb-sm-2 feature-align-desc">
+        <h2 id="features-sec" class="text-center mb-4 titles">Features</h2>
+        <p class="mx-auto d-block text-center feat-desc reg-txt">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+    </div>
       <!-- Link titles -->
-      <div class="border-gnr feat-desc--link">
-        <button type="button" class="sub-titles btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel"
+      <div id="carousel-indicators" class="feat-desc--link border-edge mx-auto feature-align mt-4 mb-sm-4 mb-md-5">
+        <button type="button" class="border-bott sub-titles btn btn-link text-decoration-none feature-btn" data-bs-target="#features-carousel"
           data-bs-slide-to="0">
           Simple Bookmarking
         </button>
-        <button type="button" class="sub-titles btn btn-link ms-3 text-decoration-none feature-btn"
+        <button type="button" class="border-bott sub-titles btn btn-link text-decoration-none feature-btn"
           data-bs-target="#features-carousel" data-bs-slide-to="1">
           Speedy Searching
         </button>
-        <button type="button" class="sub-titles btn btn-link ms-3 text-decoration-none feature-btn"
+        <button type="button" class="border-bott sub-titles btn btn-link text-decoration-none feature-btn"
           data-bs-target="#features-carousel" data-bs-slide-to="2">
           Easy Sharing
         </button>
@@ -96,12 +95,12 @@
 
 
       <div class="row">
-        <div class="hero-img col-md-6">
+        <div class="hero-img col-sm-6">
           <img src="/assets/images/illustration-hero.svg" alt="Hero Image" class="hero-image mx-auto d-block" />
           <div id="bg-illustration2" class="col-9 col-sm-10 col-md-8 col-lg-8 my-class2"></div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <!-- Carousel -->
           <div id="features-carousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Slides -->
@@ -154,17 +153,17 @@
   </section>
 
 <!-- EXTENSIONS -->
-  <section class="cards align-items-center mr-section-ext">
+  <section class="cards align-items-center mr-section-ext border-check height-sm">
     <div class="ext-sec text-center mx-2">
       <h1 class="hero-title titles">Download the extension</h1>
-      <div class="hero-description reg-txt">
+      <div class="hero-description reg-txt w-75 d-flex justify-content-center mx-auto fs-md-2">
         We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
       </div>
     </div>
   
-    <div class="row justify-content-center justify-content-md-start justify-content-lg-center gap-4 gap-sm-0">
+    <div class="row justify-content-around">
       <!-- //CHROME -->
-      <div class="col-10 col-md-4 col-lg-3 custom-card-top cust-shadow">
+      <div class="col-8 col-md-4 col-lg-3 custom-card-top cust-shadow">
         <div class="card card-ext d-flex align-items-center pt-4">
           <img class="card-img-top w-50" src="/assets/images/logo-chrome.svg" alt="Card image cap">
           <div class="card-body">
@@ -177,7 +176,7 @@
       </div>
   
       <!-- //FIREFOX -->
-      <div class="col-10 col-md-4 col-lg-3 custom-card-middle cust-shadow">
+      <div class="col-8 col-md-4 col-lg-3 custom-card-middle cust-shadow">
         <div class="card card-ext d-flex align-items-center pt-4 " style="width: 100%;">
           <img class="card-img-top w-50" src="/assets/images/logo-firefox.svg" alt="Card image cap">
           <div class="card-body">
@@ -190,7 +189,7 @@
       </div>
   
       <!-- //OPERA -->
-      <div class="col-10 col-md-4 col-lg-3 custom-card-bottom">
+      <div class="col-8 col-md-4 col-lg-3 custom-card-bottom cust-shadow">
         <div class="card card-ext d-flex align-items-center pt-4" style="width: 100%;">
           <img class="card-img-top w-50" src="/assets/images/logo-opera.svg" alt="Card image cap">
           <div class="card-body">
@@ -204,8 +203,8 @@
     </div>
   </section>
   
-
-  <section class="faq mt-4">
+<!-- FAQ -->
+  <section class="faq mt-4 border-check">
     <div class="ext-sec d-flex flex-column align-items-center mx-3 text-center">
       <h1 class="hero-title titles">Frequently Asked Questions</h1>
       <div class="hero-description reg-txt text-center">
@@ -300,19 +299,21 @@
       <a href="#" class="btn btn-primary shadow-sm mt-2">More info</a>
     </div>
   </section>
-
-  <section class="contact-us d-flex flex-column align-items-center text-center">
+<!-- CONTACT US -->
+  <section class="contact-us d-flex flex-column align-items-center text-center border-check">
     <div class="content-contact pt-5">
       <div class="promo">35.000+ ALREADY JOINED</div>
       <h1 id="contact" class="hero-title fs-2 promo mt-2">Stay up-to-date with what we're doing</h1>
     </div>
+    <div class="w-cust">
     <form class="d-flex flex-column w-100 px-4" action="">
       <input type="email" placeholder="Enter your email address" class="mt-3 rounded-1 border-0">
       <input type="button" value="Contact Us" class="bg-secondary border-0 text-white mt-2 rounded-1">
     </form>
+  </div>
   </section>
-
-  <section class="footer d-flex flex-column align-items-center text-center">
+<!-- FOOTER -->
+  <footer class="footer d-flex flex-column align-items-center text-center border-check">
     <div class="container-fluid mt-5">
       <a style="width: 60%" class="navbar-brand" href="#"><img src="/assets/images/logo-bookmark (1).png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -335,7 +336,7 @@
           <img src="/assets/images/icon-facebook.svg" alt="Facebook">
           <img src="/assets/images/icon-twitter.svg" alt="Twitter">
         </div>
-  </section>
+      </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

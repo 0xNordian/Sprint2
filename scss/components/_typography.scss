@@ -9,12 +9,33 @@
     color: $indigo;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .titles{
+        font-size: 2rem;
+        color: $indigo;
+    }
+}
+
 .sub-titles{
     font-size: 1.15rem;
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .sub-titles{
+        font-size: 1.75rem;
+    }
 }
 
 .reg-txt{
     font-size: 1rem;
     font-weight: lighter;
     color: $darkgrey;
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .reg-txt{
+        font-size: 1.35rem;
+        font-weight: lighter;
+        color: $darkgrey;
+    }
 }
