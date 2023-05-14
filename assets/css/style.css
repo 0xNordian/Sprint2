@@ -11005,6 +11005,11 @@ body {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 426px) {
+  .ext-sec {
+    margin-top: 4rem;
+  }
+}
 .gap-card {
   display: flex;
   flex-direction: row;
