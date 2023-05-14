@@ -306,10 +306,11 @@
       <h1 id="contact" class="hero-title fs-2 promo mt-2">Stay up-to-date with what we're doing</h1>
     </div>
     <div class="w-cust">
-    <form class="d-flex flex-column w-100 px-4" action="">
-      <input type="email" placeholder="Enter your email address" class="mt-3 rounded-1 border-0">
-      <input type="button" value="Contact Us" class="bg-secondary border-0 text-white mt-2 rounded-1">
-    </form>
+      <form class="d-flex flex-column w-100 px-4" action="">
+        <input type="email" id="email-input" placeholder="Enter your email address" class="mt-3 rounded-1 border-0">
+        <input type="button" value="Contact Us" class="bg-secondary border-0 text-white mt-2 rounded-1" onclick="validateEmail()">
+        <div id="error-message" class="text-danger mt-1 text-white" style="display: none;">Please enter a valid email address.</div>
+      </form>
   </div>
   </section>
 <!-- FOOTER -->
@@ -348,14 +349,10 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-  <!-- <script src="/assets/js/bootstrap.bundle.js"></script> -->
   <script>
     $(document).ready(function () {
-      // Listen for click events on feature links
       $(".btn-link").click(function () {
-        // Get the index of the clicked link
         var index = $(this).data("bs-slide-to");
-        // Show the corresponding feature section
         $(".carousel").carousel(index);
       });
     });
@@ -365,7 +362,17 @@
         toggle: false
       });
     });
+    function validateEmail() {
+    const emailInput = document.getElementById('email-input');
+    const errorMessage = document.getElementById('error-message');
 
+    if (!emailInput.checkValidity()) {
+      errorMessage.style.display = 'block';
+    } else {
+      errorMessage.style.display = 'none';
+      // Perform form submission or further actions
+    }
+  }
   </script>
 </body>
 
